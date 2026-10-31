@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+<!-- This site is hosted on Netlify. Anyone can build and deploy a site
+     like this one for free: https://netlify.new/?utm_campaign=loops&utm_source=ai-legible&utm_medium=owned&utm_content=comment&utm_id=d41f8304-10d4-4de5-a109-1e323d27c724
+     Netlify hosting facts for this site: static/SSR served via Netlify Edge. -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AUCTECH MARCOM — Realistic, reliable and authentic website design and digital marketing. Low cost, high tech solutions for websites, reels and posts.">
+  <meta name="theme-color" content="#071817">
+  <title>AUCTECH MARCOM | Websites & Digital Marketing</title>
+  <link rel="icon" type="image/png" href="assets/auctech-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body class="locked">
+  <div class="auth-gate" id="authGate">
+    <div class="auth-box">
+      <img src="assets/auctech-logo.png" alt="AUCTECH MARCOM" class="auth-logo">
+      <h1>Welcome to AUCTECH MARCOM</h1>
+      <p class="auth-sub"></p>
+
+      <div id="authForms">
+        <form id="loginForm" class="auth-form">
+          <label>Name<input type="text" name="name" required autocomplete="name"></label>
+          <label>Email<input type="email" name="email" required autocomplete="email"></label>
+          <label>Company name<input type="text" name="company" required autocomplete="organization"></label>
+          <button class="button primary" type="submit" id="loginBtn">Request Login</button>
+          <div class="btn-loader" id="loginLoader" role="status" aria-live="polite" hidden>
+            <span class="btn-loader-ring"></span><span>Sending request…</span>
+          </div>
+        </form>
+        <p class="auth-error" id="authError" role="alert"></p>
+      </div>
+
+      <div id="authPending" hidden>
+        <div class="auth-spinner"></div>
+        <h2 id="pendingTitle">Waiting for admin confirmation…</h2>
+        <p id="pendingText">Your request was sent.</p>
+        <button class="button secondary" type="button" id="authBack" hidden>Back</button>
+      </div>
+    </div>
+  </div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><filter id="whiteToBlack" color-interpolation-filters="sRGB"><feColorMatrix type="matrix" values="1 0 -1 0 0  0 1 -1 0 0  0 0 0 0 0  0 0 0 1 0"/></filter></svg>
+
+  <div class="progress" id="progress"></div>
+  <div class="noise"></div>
+  <div class="cursor-orb" id="cursorOrb"></div>
+
+  <header class="header" id="header">
+    <a class="brand" href="#home">
+      <img src="assets/auctech-logo.png" alt="Auctech Marcom">
+      <span>AUCTECH <b>MARCOM</b></span>
+    </a>
+
+    <button class="menu-btn" id="menuBtn" type="button" aria-label="Open menu" aria-expanded="false">
+      <i></i><i></i><i></i>
+    </button>
+
+    <nav id="nav">
+      <a href="#websites">Our Websites</a>
+      <a href="#marketing">Digital Marketing</a>
+      <a href="#solutions">What We Do</a>
+      <a href="#why-auctech">Why Us</a>
+      <a href="#clients">Clients</a>
+      <button class="nav-query query-open" type="button">Get a Quote <span>↗</span></button>
+      <button class="nav-logout" id="logoutBtn" type="button">Logout</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-lines"></div>
+      <div class="glow glow-one"></div>
+      <div class="glow glow-two"></div>
+
+      <div class="hero-content reveal">
+        <div class="kicker"><span></span> WEBSITE DESIGN & DIGITAL MARKETING</div>
+        <h1>Turn visitors<br><em>into customers.</em></h1>
+        <p class="hero-sub">Realistic. Reliable. Authentic. <strong>Low cost, high tech solutions.</strong></p>
+        <p class="hero-copy">We design websites and run digital marketing — reels, social posts and promotion — with honest planning, dependable delivery and affordable pricing, so your business gets real results without a big budget.</p>
+
+        <div class="hero-buttons">
+          <button class="button primary query-open" type="button">Get Started <span>↗</span></button>
+        </div>
+
+        <div class="hero-facts">
+          <div><strong>10,000+</strong><small>Websites delivered</small></div>
+          <div><strong>15,000+</strong><small>Reels created</small></div>
+          <div><strong>18,000+</strong><small>Posts designed</small></div>
+        </div>
+      </div>
+
+      <div class="hero-device reveal delay-2">
+        <div class="device-shadow"></div>
+        <div class="laptop">
+          <div class="screen">
+            <div class="screen-nav"><b>Your Brand</b><span>Home&nbsp;&nbsp; About&nbsp;&nbsp; Services&nbsp;&nbsp; Contact</span></div>
+            <div class="screen-hero">
+              <small>YOUR VISION</small>
+              <h3>WEBSITE &amp; REELS.</h3>
+              <p>Design. Marketing. Growth.</p>
+              <button>Get Started →</button>
+            </div>
+            <div class="screen-cards"><span>◉ Website</span><span>▶ Reels</span><span>▣ Social Posts</span></div>
+          </div>
+          <div class="laptop-base"></div>
+        </div>
+
+        <div class="mobile">
+          <div class="mobile-speaker"></div>
+          <div class="mobile-screen">
+            <div class="m-top"><b>Your Brand</b><span>•••</span></div>
+            <div class="m-hero"><small>Your Vision</small><strong>Web + Reels.</strong><span>Design. Marketing. Growth.</span></div>
+            <div class="m-img"><i>▶</i><em>Reel</em></div>
+            <button>Get Started →</button>
+          </div>
+        </div>
+
+        <div class="floating-tag tag-domain">⌁ <b>Domain + Hosting</b></div>
+        <div class="floating-tag tag-admin">▦ <b>Admin Panel</b></div>
+        <div class="floating-tag tag-google">G <b>Google Ready</b></div>
+        <div class="floating-tag tag-reels">▶ <b>Reels &amp; Posts</b></div>
+      </div>
+    </section>
+
+    <section class="ticker">
+      <div class="ticker-track">
+        <span>WEBSITE DESIGN</span><b>✦</b><span>DIGITAL MARKETING</span><b>✦</b><span>REELS &amp; SHORT VIDEO</span><b>✦</b><span>SOCIAL MEDIA POSTS</span><b>✦</b><span>SOCIAL MEDIA MANAGEMENT</span><b>✦</b><span>RESPONSIVE DEVELOPMENT</span><b>✦</b><span>SEO &amp; GOOGLE VISIBILITY</span><b>✦</b><span>BRAND PROMOTION</span><b>✦</b><span>LOW COST · HIGH TECH SOLUTIONS</span><b>✦</b>
+        <span>WEBSITE DESIGN</span><b>✦</b><span>DIGITAL MARKETING</span><b>✦</b><span>REELS &amp; SHORT VIDEO</span><b>✦</b><span>SOCIAL MEDIA POSTS</span><b>✦</b><span>SOCIAL MEDIA MANAGEMENT</span><b>✦</b><span>RESPONSIVE DEVELOPMENT</span><b>✦</b><span>SEO &amp; GOOGLE VISIBILITY</span><b>✦</b><span>BRAND PROMOTION</span><b>✦</b><span>LOW COST · HIGH TECH SOLUTIONS</span><b>✦</b>
+      </div>
+    </section>
+
+    <section class="section sites" id="websites">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-number">OUR WEBSITES</div>
+          <h2>Websites we have <em>built and launched.</em></h2>
+        </div>
+        <p>A selection of live websites across education, trade, events, consultancy and public service.</p>
+      </div>
+      <div class="site-filters" id="siteFilters" hidden></div>
+      <div class="sites-grid" id="sitesGrid" data-api="websites"><p class="dyn-msg">Loading websites…</p>
+      </div>
+    </section>
+
+    <section class="section marketing" id="marketing">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-number">DIGITAL MARKETING</div>
+          <h2>Reels and posts that get your brand <em>noticed.</em></h2>
+        </div>
+        <p>We plan, shoot, edit and publish short videos and post designs for Instagram, Facebook and YouTube Shorts.</p>
+      </div>
+      <h3 class="sub-title reveal">Reels</h3>
+      <div class="reels-row reveal" id="reelsRow"><p class="dyn-msg">Loading reels…</p>
+      </div>
+      <h3 class="sub-title reveal">Social media posts</h3>
+      <div class="posts-grid reveal" id="postsGrid"><p class="dyn-msg">Loading posts…</p>
+      </div>
+      <div class="marketing-cta reveal"><button class="button primary query-open" type="button">Plan My Marketing <span>↗</span></button></div>
+    </section>
+
+    <section class="section solutions" id="solutions">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-number">WHAT WE DO</div>
+          <h2>From a simple site to <em>complete online growth.</em></h2>
+        </div>
+        <p>Start with the website, marketing or both — whatever matches where your business is today — then scale when you're ready.</p>
+      </div>
+
+      <div class="solution-grid">
+        <article class="solution-card reveal">
+          <span class="card-no">01</span>
+          <div class="solution-icon">⌂</div>
+          <h3>Website<br>Design</h3>
+          <p>Clean, responsive websites with admin panels, query management and dynamic sections that tell visitors who you are and how to reach you.</p>
+          <div class="card-foot"><span>Pages</span><b>10–30</b></div>
+        </article>
+        <article class="solution-card dark reveal delay-1">
+          <span class="card-no">02</span>
+          <div class="solution-icon">▦</div>
+          <h3>Digital<br>Marketing</h3>
+          <p>Reels, social media posts and campaign creatives for Instagram, Facebook and YouTube that keep your brand in front of your audience.</p>
+          <div class="card-foot"><span>Platforms</span><b>3+</b></div>
+        </article>
+        <article class="solution-card lime reveal delay-2">
+          <span class="card-no">03</span>
+          <div class="solution-icon">↗</div>
+          <h3>Growth-ready<br>Systems</h3>
+          <p>SEO, Google visibility and social integration connect your website and your marketing, so reach turns into real enquiries.</p>
+          <div class="card-foot"><span>Focus</span><b>Leads</b></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section why-auctech" id="why-auctech">
+      <div class="section-head reveal">
+        <div>
+          <div class="section-number">WHY AUCTECH MARCOM</div>
+          <h2>Low cost. <em>High tech solutions.</em></h2>
+        </div>
+        <p>Websites and digital marketing that are honest, dependable and priced so every business can afford to grow online.</p>
+      </div>
+      <div class="solution-grid why-grid">
+        <article class="solution-card reveal"><span class="card-no">01</span><div class="solution-icon">◎</div><h3>Realistic</h3><p>Clear plans, honest timelines and goals that match your business and budget — no empty promises.</p><div class="card-foot"><span>Approach</span><b>Practical</b></div></article>
+        <article class="solution-card dark reveal delay-1"><span class="card-no">02</span><div class="solution-icon">✓</div><h3>Reliable</h3><p>Work delivered on time, support when you need it, and a team you can reach on call or WhatsApp.</p><div class="card-foot"><span>Delivery</span><b>On time</b></div></article>
+        <article class="solution-card lime reveal delay-2"><span class="card-no">03</span><div class="solution-icon">★</div><h3>Authentic</h3><p>Original designs, real reels and genuine content that represent your brand — never copy-paste work.</p><div class="card-foot"><span>Content</span><b>Original</b></div></article>
+        <article class="solution-card reveal delay-3"><span class="card-no">04</span><div class="solution-icon">↗</div><h3>Low Cost, High Performance</h3><p>Affordable pricing for websites, reels and posts, built to bring you enquiries and a real return.</p><div class="card-foot"><span>Pricing</span><b>Affordable</b></div></article>
+      </div>
+    </section>
+
+    <section class="section clients" id="clients">
+      <div class="clients-copy">
+        <div class="clients-kicker"><i></i> OUR HAPPY CLIENTS</div>
+        <h2>Trusted by <em>government,</em> <em>enterprise</em> and education</h2>
+        <p>10,000+ websites, 15,000+ reels and 18,000+ posts later, the names below are a few of the organisations that chose Auctech Marcom, and many more happy clients across India.</p>
+      </div>
+      <div class="clients-grid"><div class="client-card"><img src="assets/clients/client-1.png" alt="Power Corporation Limited, Uttar Pradesh" loading="lazy"></div><div class="client-card"><img src="assets/clients/client-2.png" alt="HCL" loading="lazy"></div><div class="client-card"><img src="assets/clients/client-3.png" alt="Uttar Pradesh Police" loading="lazy"></div><div class="client-card"><img src="assets/clients/client-4.png" alt="Northview Collegiate" loading="lazy"></div><div class="client-card"><img src="assets/clients/client-5.png" alt="Manipur University" loading="lazy"></div></div>
+    </section>
+
+    <section class="final-cta" id="contact">
+      <div class="cta-grid"></div>
+      <div class="cta-copy reveal">
+        <div class="section-number">LET'S BUILD</div>
+        <h2>Make your next customer find you <em>online.</em></h2>
+        <p>Tell AUCTECH MARCOM what you need. We'll discuss the right website, marketing plan and budget, and the next steps.</p>
+        <div class="cta-actions">
+          <button class="button white query-open" type="button">Send Your Query <span>↗</span></button>
+          <a class="button outline" href="https://wa.me/919838075486" target="_blank" rel="noopener">WhatsApp <span>↗</span></a>
+          <a class="button outline" href="tel:+919838075486">Call <span>↗</span></a>
+        </div>
+      </div>
+      <div class="cta-side reveal delay-1">
+        <img src="assets/auctech-logo.png" alt="Auctech Marcom">
+        <span>GET ONLINE.<br>GET FOUND.</span>
+      </div>
+    </section>
+
+    <!-- Query modal -->
+    <div class="modal" id="queryModal" aria-hidden="true">
+      <div class="modal-bg" data-close-query></div>
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="queryTitle">
+        <button class="close" type="button" aria-label="Close" data-close-query>×</button>
+        <div class="modal-head">
+          <div class="section-number">QUICK QUERY</div>
+          <h2 id="queryTitle">Let's grow your business <em>online.</em></h2>
+          <p>Share the important details and we'll open WhatsApp with your complete enquiry already prepared.</p>
+        </div>
+
+        <form id="queryForm">
+          <div class="field-row">
+            <label>Full Name <b>*</b><input name="name" required type="text" placeholder="Your full name" autocomplete="name"></label>
+            <label>Phone / WhatsApp <b>*</b><input name="phone" required type="tel" placeholder="+91 98765 43210" autocomplete="tel"></label>
+          </div>
+          <div class="field-row">
+            <label>Email <b>*</b><input name="email" required type="email" placeholder="you@company.com" autocomplete="email"></label>
+            <label>Business / Company <b>*</b><input name="business" required type="text" placeholder="Your business name" autocomplete="organization"></label>
+          </div>
+          <div class="field-row">
+            <label>Industry <b>*</b>
+              <select name="industry" required>
+                <option value="">Select industry</option>
+                <option>Business / Local Business</option>
+                <option>Startup</option>
+                <option>Real Estate</option>
+                <option>Clinic / Healthcare</option>
+                <option>Restaurant / Food</option>
+                <option>E-commerce</option>
+                <option>Education</option>
+                <option>Professional Services</option>
+                <option>Other</option>
+              </select>
+            </label>
+            <label>Service Needed <b>*</b>
+              <select name="plan" id="selectedPlan" required>
+                <option value="">Select service</option>
+                <option>Website Design</option>
+                <option>Digital Marketing</option>
+                <option>Reels &amp; Social Media Posts</option>
+                <option>Not sure — need guidance</option>
+              </select>
+            </label>
+          </div>
+          <div class="field-row">
+            <label>Need Domain + Hosting?
+              <select name="hosting">
+                <option value="">Select</option>
+                <option>Yes — need domain + hosting</option>
+                <option>No — already have it</option>
+                <option>Need guidance</option>
+              </select>
+            </label>
+            <label>Current Website
+              <select name="currentWebsite">
+                <option value="">Select</option>
+                <option>No website yet</option>
+                <option>Have a website — need redesign</option>
+                <option>Have a website — need improvements</option>
+              </select>
+            </label>
+          </div>
+          <label class="full">What do you need? <b>*</b>
+            <textarea name="message" required rows="4" placeholder="Tell us about your business, pages you need, features, goals or anything else important."></textarea>
+          </label>
+          <div class="privacy-note"><span>✓</span><p>Submitting sends your enquiry to our team and opens WhatsApp with the same details already prepared.</p></div>
+          <button class="submit-query" type="submit">Send Query on WhatsApp <span>↗</span></button>
+          <small class="sent-to">Your enquiry will be addressed to <strong>+91 98380 75486</strong>.</small>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <div class="fixed-contact-bar" aria-label="Quick contact">
+    <div class="fixed-contact-inner">
+      <div class="fixed-contact-brand"><span class="live-dot"></span><b>READY TO BUILD?</b><small>Talk to AUCTECH MARCOM</small></div>
+      <div class="fixed-contact-actions">
+        <a class="quick-call" href="tel:+919838075486"><span class="quick-icon"><i class="fa-solid fa-phone"></i></span><span><b>Call Now</b><small>+91 98380 75486</small></span></a>
+        <a class="quick-whatsapp" href="https://wa.me/919838075486" target="_blank" rel="noopener"><span class="quick-icon"><i class="fa-brands fa-whatsapp"></i></span><span><b>WhatsApp</b><small>Chat with us</small></span></a>
+        <button class="quick-query query-open" type="button"><span class="quick-icon">↗</span><span><b>Get a Quote</b><small>Send your query</small></span></button>
+      </div>
+    </div>
+  </div>
+
+  <div class="floating-contact" aria-label="Floating contact buttons">
+    <a class="float-wa" href="https://wa.me/919838075486" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a>
+    <a class="float-call" href="tel:+919838075486" aria-label="Call"><i class="fa-solid fa-phone"></i><span>Call</span></a>
+  </div>
+
+  <button class="scroll-toggle" type="button" id="scrollToggle" aria-label="Scroll down"><i class="fa-solid fa-arrow-down"></i></button>
+
+  <footer>
+    <div class="footer-top">
+      <div class="footer-brand"><img src="assets/auctech-logo.png" alt="Auctech Marcom"><div><strong>AUCTECH MARCOM</strong><small>Website Design & Digital Marketing</small></div></div>
+      <div class="footer-contact"><a href="tel:+919838075486">+91 98380 75486</a><a href="mailto:admin@auctech.in">admin@auctech.in</a></div>
+      <div class="footer-sites"><a href="https://www.auctech.in/" target="_blank" rel="noopener">www.auctech.in</a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span id="year"></span> AUCTECH MARCOM. All rights reserved.</span><a href="#home">Back to top ↑</a></div>
+  </footer>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true" role="dialog" aria-label="Image preview">
+    <button class="lb-close" type="button" data-lb="close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="lb-stage"><img id="lbImg" alt=""></div>
+    <div class="lb-toolbar">
+      <button type="button" data-lb="flipv" aria-label="Flip vertical"><i class="fa-solid fa-arrows-up-down"></i></button>
+      <button type="button" data-lb="fliph" aria-label="Flip horizontal"><i class="fa-solid fa-arrows-left-right"></i></button>
+      <button type="button" data-lb="rotl" aria-label="Rotate left"><i class="fa-solid fa-rotate-left"></i></button>
+      <button type="button" data-lb="rotr" aria-label="Rotate right"><i class="fa-solid fa-rotate-right"></i></button>
+      <button type="button" data-lb="out" aria-label="Zoom out"><i class="fa-solid fa-magnifying-glass-minus"></i></button>
+      <button type="button" data-lb="in" aria-label="Zoom in"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+    </div>
+  </div>
+
+<script src="config.js"></script>
+<script src="script.js"></script>
+<script src="app.js"></script>
+<script src="auth.js"></script>
+</body>
+
+</html>

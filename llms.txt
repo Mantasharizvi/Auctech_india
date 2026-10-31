@@ -1,0 +1,32 @@
+# Auctech Marcom
+
+> Auctech Marketing Communication Pvt. Ltd. (Auctech Marcom) is a marketing communication company based in Hazratganj, Lucknow, Uttar Pradesh, India, serving businesses across India. It provides AI automation and smart CRM, website design and custom software development, mobile app development, brand identity design, and digital brand strategy, digital marketing and SEO.
+
+Key facts:
+- Legal name: Auctech Marketing Communication Pvt. Ltd. — brand name: Auctech Marcom
+- Location: 167, Flat 101, Shaligram Apartment, New Jiamau Road, Hazratganj, Lucknow – 226001, Uttar Pradesh, India
+- Phone: +91 98380 75490 — Email: admin@auctech.in — Website: https://auctech.in/
+- Track record: 10,000+ websites created and 2,500+ software solutions delivered
+- Notable clients: Uttar Pradesh Power Corporation Ltd. (UP Government electricity department), Uttar Pradesh Police, HCL, Northview Collegiate (Canada), Manipur University, and many more
+- Serves: businesses, institutions and government bodies across India and abroad
+- Positioning: "Less busywork. More business." Practical, transparent AI; human review for judgment-based decisions; automation built around existing tools; ongoing support after launch.
+- Tools: OpenAI API and LLM chatbots, HubSpot, Zoho CRM, Zapier, Make, HTML5/CSS3/JavaScript, React, WordPress, headless CMS, Figma, Adobe Creative Cloud, Illustrator, Photoshop, SEO and analytics tools, social and paid advertising platforms.
+
+## Services
+
+- [AI Automation & Smart CRM](https://auctech.in/service-ai-automation.html): AI automation, chatbots and smart CRM workflows that help Indian businesses reduce repetitive work and respond to leads faster.
+- [Website Design & Custom Software Development](https://auctech.in/service-web-development.html): Responsive website design and custom software solutions for businesses across India.
+- [Mobile App Development](https://auctech.in/service-mobile-app-development.html): Android, iOS and cross-platform mobile apps that help Indian businesses serve customers, simplify tasks and strengthen their digital presence.
+- [Brand Identity Design](https://auctech.in/service-brand-identity.html): Brand identity services that help Indian businesses define their personality, build trust and maintain a consistent visual presence.
+- [Digital Brand Strategy, Digital Marketing & SEO](https://auctech.in/service-digital-marketing.html): Digital strategy and marketing services to help Indian businesses improve online visibility, engage audiences and support sustainable growth.
+
+## Company
+
+- [About Auctech Marcom](https://auctech.in/about.html): Mission, vision, values and how the company works.
+- [FAQs](https://auctech.in/faqs.html): Answers about budgets, chatbots, CRM tools, WordPress vs custom code, redesigns, hosting, mobile app development, logo concepts, deliverables and marketing measurement.
+- [Contact](https://auctech.in/contact.html): Address, phone, email and enquiry form.
+
+## Optional
+
+- [Full plain-text version of the site](https://auctech.in/llms-full.txt)
+- [Sitemap](https://auctech.in/sitemap.xml)

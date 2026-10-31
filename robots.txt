@@ -1,0 +1,49 @@
+# Auctech Marcom — robots.txt
+User-agent: *
+Allow: /
+Disallow: /404.html
+
+# AI / LLM crawlers are welcome to index and cite this site
+User-agent: GPTBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: Claude-User
+Allow: /
+User-agent: Claude-SearchBot
+Allow: /
+User-agent: anthropic-ai
+Allow: /
+User-agent: PerplexityBot
+Allow: /
+User-agent: Perplexity-User
+Allow: /
+User-agent: Google-Extended
+Allow: /
+User-agent: GoogleOther
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+User-agent: CCBot
+Allow: /
+User-agent: meta-externalagent
+Allow: /
+User-agent: Bytespider
+Allow: /
+User-agent: DuckAssistBot
+Allow: /
+User-agent: YouBot
+Allow: /
+
+Sitemap: https://auctech.in/sitemap.xml
+# Machine-readable summary for AI assistants
+# https://auctech.in/llms.txt
+# https://auctech.in/llms-full.txt

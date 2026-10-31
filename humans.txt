@@ -1,0 +1,9 @@
+/* TEAM */
+Company: Auctech Marketing Communication Pvt. Ltd. (Auctech Marcom)
+Location: Lucknow, Uttar Pradesh, India
+Contact: admin@auctech.in
+
+/* SITE */
+Last update: 2026-10-15
+Language: English
+Standards: HTML5, CSS3, Schema.org JSON-LD
